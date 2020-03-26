@@ -1,0 +1,43 @@
+extends layout/_main.pug 
+
+mixin item(img, p1, p2)
+	.account-item
+		.account-item-img(style= img)
+		p.main-text.account-item-text
+			= p1
+			br
+			= p2
+
+
+block title 
+	| Капитал Тест
+
+block content
+	.main
+		.main-bg
+		.container 
+			.simulator
+				.simulator-text
+					h4.simulator-subtitle.main-subtitle For Beginner Traders
+					h2.simulator-title.main-title 
+						span Free 
+						|trading simulator
+					p.simulator-p.main-text 
+						|Are you new to trading financial markets? – Sign up
+						|with MTrading and get from $5,000 on your simulator demo
+						|account to practice Forex, and CFDs trading strategies
+						|in real market conditions!
+					a(href="#").btn.simulator-btn Open Demo Account
+				.simulator-img
+					.simulator-cow
+			.account 
+				h2.account-title.main-title 
+					|Demo Account 
+					span benefits
+				.account-block
+					+item("background: url('../img/main/item01.png') center no-repeat; background-size: contain;","Real trading", "experience without risk")
+					+item("background: url('../img/main/item03.png') center no-repeat; background-size: contain;","Forex and CFDs trading", "in real market conditions")
+					+item("background: url('../img/main/item05.png') center no-repeat; background-size: contain;","Professional", "individual support")
+					+item("background: url('../img/main/item02.png') center no-repeat; background-size: contain;","Based on MetaTrader 4", "trading platform")
+					+item("background: url('../img/main/item04.png') center no-repeat; background-size: contain;","All trading", "strategies allowed")
+					+item("background: url('../img/main/item06.png') center no-repeat; background-size: contain;","Unlimited demo balance", "starting at $5,000")

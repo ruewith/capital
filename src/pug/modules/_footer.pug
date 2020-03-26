@@ -1,0 +1,27 @@
+mixin slide(img)
+    .swiper-slide.footer-slide(style= img)
+
+.footer
+    .container
+        .footer-main
+            .footer-text
+                h4.footer-subtitle.main-subtitle Gain Trading Experience
+                h2.footer-title.main-title 
+                    |Start in less
+                    br
+                    |than 
+                    span 5 minutes
+                p.footer-p.main-text 
+                    |Gain the experience and enter
+                    br
+                    |the market with confidence
+                a(href="#").btn Open Demo Account
+            .footer-wrapper
+                .footer-img
+                .footer-slider
+                    +slide("background: url('../img/footer/slide1.png') 0 0 no-repeat; background-size: contain;")
+                    +slide("background: url('../img/footer/slide2.png') 0 0 no-repeat; background-size: contain;")
+                    +slide("background: url('../img/footer/slide3.png') 0 0 no-repeat; background-size: contain;")
+                    +slide("background: url('../img/footer/slide4.png') 0 0 no-repeat; background-size: contain;")
+
+                
